@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Add Bootstrap Thymeleaf</title>
+   <link rel="stylesheet" th:href="@{/css/bootstrap.min.css}">
+</head>
+
+<body>
+   <div class="container my-5">
+      <div class="row">
+         <div class="col-12">
+            <table class="table table-bordered table-responsive table-striped">
+               <thead>
+                  <tr>
+                     <th>Employee Name</th>
+                     <th>Employee Email</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td>Kshitiz Jain</td>
+                     <td>kshitiz@mail.com</td>
+                  </tr>
+                  <tr>
+                     <td>Nidhi Singh</td>
+                     <td>champ@mail.com</td>
+                  </tr>
+                  <tr>
+                     <td>Omkar Chougule</td>
+                     <td>omi@mail.com</td>
+                  </tr>
+               </tbody>
+            </table>
+         </div>
+      </div>
+   </div>
+</body>
+
+</html>

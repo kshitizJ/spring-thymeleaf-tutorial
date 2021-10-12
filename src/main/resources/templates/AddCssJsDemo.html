@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Add Css and Js To Thymeleaf</title>
+   <link rel="stylesheet" th:href="@{/css/main.css}">
+</head>
+
+<body>
+
+   <h2>Heading</h2>
+   <p>This is a text on which we want to apply <strong>very special</strong> styling.</p>
+   <button type="button" th:onclick="demo()">Show Alert</button>
+
+   <!-- '@{/js/actions.js}' -> this is thymeleaf link (URL) expression -->
+   <script type="text/javascript" th:src="@{/js/actions.js}"></script>
+</body>
+
+</html>

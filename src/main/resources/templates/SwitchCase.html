@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Switch Case Example</title>
+   <link rel="stylesheet" th:href="@{/css/bootstrap.min.css}">
+</head>
+
+<body>
+   <div class="container">
+      <div class="row">
+         <div class="col-12">
+            <div class="card my-3">
+               <div class="card-head my-3">
+                  <h1 class="text-center">Thymeleaf Switch Case</h1>
+                  <h4 class="text-center mt-2" th:utext="${user.userName}"></h4>
+               </div>
+               <div class="card-body">
+                  <div th:switch="${user.role}">
+                     <p th:case="'ADMIN'">User is an Administrator.</p>
+                     <p th:case="'MANAGER'">User is a Manager.</p>
+                     <p th:case="'GUEST'">User is a Guest.</p>
+                     <!-- use '*' for default case -->
+                     <p th:case="*">User is someone else.</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</body>
+
+</html>
